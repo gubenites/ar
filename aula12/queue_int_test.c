@@ -5,7 +5,7 @@
 #define assert_not_empty(q) { test_assert(!queue_int_empty(q), "empty"); }
 #define assert_full(q) { test_assert(queue_int_full(q), "not full"); }
 #define assert_not_full(q) { test_assert(!queue_int_full(q), "full"); }
-#define assert_get(q, expected) { int actual = queue_int_get(q); char str[50]; sprintf(str, "got %d but expected %d", actual, expected); test_assert(actual == expected, str); }
+#define assert_get(q, expected) { int actual = queue_int_get(q, 2); char str[50]; sprintf(str, "got %d but expected %d", actual, expected); test_assert(actual == expected, str); }
 
 
 int capacity1_put_get_put_get(void) {

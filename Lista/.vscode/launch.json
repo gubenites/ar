@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/set_int_test",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "make"
+        }
+    ]
+}
